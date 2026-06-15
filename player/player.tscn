@@ -9,6 +9,8 @@
 script = ExtResource("1_onrkg")
 
 [node name="collision" type="CollisionShape2D" parent="." unique_id=1161229358]
+position = Vector2(510.99997, 266)
+scale = Vector2(5.5432043, 5.5432043)
 shape = SubResource("RectangleShape2D_hqtel")
 
 [node name="playerIcon" type="Sprite2D" parent="." unique_id=1332515415]
