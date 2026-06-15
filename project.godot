@@ -11,8 +11,9 @@ config_version=5
 [application]
 
 config/name="test"
+run/main_scene="uid://db3x6hhv5s5yi"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://player/icon.svg"
 
 [physics]
 
