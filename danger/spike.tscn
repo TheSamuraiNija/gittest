@@ -1,3 +1,18 @@
 [gd_scene format=3 uid="uid://cn85sisqlp5pp"]
 
-[node name="Spike" type="Node2D" unique_id=108909185]
+[ext_resource type="Texture2D" uid="uid://cwdboy55pieqp" path="res://danger/The_Family's_Resentment_Gift.png" id="1_qeweg"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_s7cv1"]
+
+[node name="Spike" type="Area2D" unique_id=1297959356]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=262680174]
+shape = SubResource("CapsuleShape2D_s7cv1")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1319766849]
+offset_left = -10.0
+offset_top = -16.0
+offset_right = 394.18585
+offset_bottom = 240.0
+scale = Vector2(0.049482185, 0.12821087)
+texture = ExtResource("1_qeweg")

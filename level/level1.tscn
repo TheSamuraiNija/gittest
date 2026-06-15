@@ -1,8 +1,13 @@
 [gd_scene format=3 uid="uid://db3x6hhv5s5yi"]
 
 [ext_resource type="PackedScene" uid="uid://diygwv781k3tm" path="res://player/player.tscn" id="1_cc4m7"]
+[ext_resource type="PackedScene" uid="uid://cn85sisqlp5pp" path="res://danger/spike.tscn" id="2_w28nb"]
 
 [node name="level1" type="Node2D" unique_id=954976329]
 
 [node name="player" parent="." unique_id=1050860432 instance=ExtResource("1_cc4m7")]
 position = Vector2(76, 50)
+
+[node name="Spike" parent="." unique_id=1297959356 instance=ExtResource("2_w28nb")]
+position = Vector2(146, 329)
+scale = Vector2(13.159998, 9.839997)
