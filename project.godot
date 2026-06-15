@@ -10,18 +10,10 @@ config_version=5
 
 [application]
 
-config/name="test"
+config/name="John"
 run/main_scene="uid://73sv2vhscdad"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://player/icon.svg"
-
-[file_customization]
-
-folder_colors={
-"res://level/": "red",
-"res://menus/": "orange",
-"res://player/": "yellow"
-}
+config/icon="res://icon.svg"
 
 [physics]
 
