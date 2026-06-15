@@ -1,7 +1,9 @@
-[gd_scene format=3 uid="uid://db3x6hhv5s5yi"]
+[gd_scene format=3 uid="uid://dart3fyvamy2y"]
 
 [ext_resource type="PackedScene" uid="uid://diygwv781k3tm" path="res://player/player.tscn" id="1_cc4m7"]
 [ext_resource type="PackedScene" uid="uid://cn85sisqlp5pp" path="res://danger/spike.tscn" id="2_w28nb"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_w28nb"]
 
 [node name="level1" type="Node2D" unique_id=954976329]
 
@@ -11,3 +13,10 @@ position = Vector2(76, 50)
 [node name="Spike" parent="." unique_id=1297959356 instance=ExtResource("2_w28nb")]
 position = Vector2(146, 329)
 scale = Vector2(13.159998, 9.839997)
+
+[node name="ground" type="StaticBody2D" parent="Spike" unique_id=1033153647]
+
+[node name="groundCollision" type="CollisionShape2D" parent="Spike/ground" unique_id=2132335833]
+position = Vector2(32.82675, 20.934963)
+scale = Vector2(0.07598785, 0.101626046)
+shape = SubResource("WorldBoundaryShape2D_w28nb")
